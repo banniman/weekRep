@@ -16,13 +16,15 @@
   height: 100vh;
 }
 </style>
-<link rel="stylesheet" href="https://unpkg.com/markmap-toolbar@0.18.10/dist/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/style.css">
 </head>
 <body>
 <svg id="mindmap"></svg>
-<script src="https://unpkg.com/d3@7.9.0/dist/d3.min.js"></script><script src="https://unpkg.com/markmap-view@0.18.10/dist/browser/index.js"></script><script src="https://unpkg.com/markmap-toolbar@0.18.10/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.10/dist/browser/index.js" defer></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.10/dist/index.js"></script> -->
 
-<script>(r => {
+<!-- <script>(r => {
               setTimeout(r);
             })(function renderToolbar() {
   const {
@@ -34,7 +36,7 @@
   } = markmap.Toolbar.create(mm);
   el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
   document.body.append(el);
-})</script>
+})</script> -->
 
 
 <script>((getMarkmap, getOptions, root2, jsonOptions) => {
