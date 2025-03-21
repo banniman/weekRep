@@ -46,11 +46,15 @@
       const mm = window.markmap.Markmap.create("svg#mindmap", options, markmapData);
 
       // 添加 toolbar
+
+      /*
       const { el } = window.markmap.Toolbar.create(mm);
       el.style.position = 'absolute';
       el.style.bottom = '20px';
       el.style.right = '20px';
       document.body.append(el);
+
+      */
 
       // 暴露全局（如果需要调试）
       window.mm = mm;
